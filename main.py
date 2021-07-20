@@ -11,8 +11,8 @@ from sklearn.externals import joblib
 app = Flask(__name__)
 
 # inputs
-training_data = 'data/titanic.csv'
-include = ['Age', 'Sex', 'Embarked', 'Survived']
+training_data = 'data/cardio_train1.csv'
+include = ['gender', 'height', 'weight', 'ap_hi', 'ap_lo', 'cholesterol', 'gluc', 'smoke', 'alco', 'active', 'cardio']
 dependent_variable = include[-1]
 
 model_directory = 'model'
